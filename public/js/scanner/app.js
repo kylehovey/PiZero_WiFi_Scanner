@@ -1,7 +1,7 @@
 class App {
   constructor(options) {
     // Create the loader
-    this.loader = new Loader();
+    this.loader = new Loader("loader");
 
     // Instantiate the list
     this.list = new List({
