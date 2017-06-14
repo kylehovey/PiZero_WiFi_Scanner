@@ -14,5 +14,10 @@
     "node-wifi-scanner": "^1.0.0",
     "pug": "^2.0.0-rc.2",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "babel-preset-latest": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2"
   }
 }
