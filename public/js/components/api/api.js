@@ -4,6 +4,6 @@ API = {
   },
 
   getScanResults : async () => {
-    return (await API.basicGet("/api")).message;
+    return (await API.basicGet("/api")).results;
   }
 };

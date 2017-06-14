@@ -39,7 +39,7 @@ li {
 }
 
 li:before {
-	content : "\e157";
+	/*content : "\e157";*/
 	font-family : 'Glyphicons Halflings';
 	float : left;
 	margin-right : 10px;

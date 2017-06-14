@@ -10,12 +10,12 @@ router.get('/', function(req, res, next) {
     if (err) {
       res.json({
         success : false,
-        message : []
+        message : "Could not get results."
       });
     } else {
       res.json({
         success : true,
-        message : networks.map(network => network.ssid)
+        results : networks
       });
     }
   });
