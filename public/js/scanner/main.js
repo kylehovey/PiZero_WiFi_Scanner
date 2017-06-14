@@ -5,11 +5,11 @@ $(() => {
   });
 
   // Render first results
-  app.renderResults();
+  app.results.renderResults();
 
   /* ===== Listeners ===== */
   $("#refresh").on('click', (e) => {
-    app.renderResults();
+    app.results.renderResults();
   });
   /* ===== Listeners ===== */
 });

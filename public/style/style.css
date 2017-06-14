@@ -43,6 +43,10 @@ span.uppercase {
   text-transform : uppercase;
 }
 
+span.capitalize {
+  text-transform : capitalize;
+}
+
 li {
 	display : block;
 }
