@@ -22,7 +22,7 @@ class App {
     });
 
     // Return the string without the trailing comma
-    return out.slice(0, -2);
+    return out.slice(0, -8);
   }
 
   /**
