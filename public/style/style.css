@@ -1,5 +1,5 @@
 body {
-	background-image : url(../images/bg.png);
+	background-image : url(/images/bg.png);
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -15,7 +15,7 @@ header {
 }
 
 .title {
-	background-color : rgb(63, 31, 31);
+  background-color : rgb(94, 175, 94);
 	border-radius : 5px;
 	padding-left : 10px;
 	padding-right : 10px;
@@ -68,7 +68,7 @@ li:before {
 }
 
 .card-container {
-	background-color : rgb(80, 80, 80);
+	background-color : rgba(80, 80, 80, 0.7);
 	border-radius : 5px;
 	box-shadow : -2px -2px 5px rgb(20, 20, 20);
 	color : rgb(240, 240, 240);
