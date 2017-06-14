@@ -1,17 +1,23 @@
-// Get the router
+// Dependencies
 const express = require('express');
 const router = express.Router();
+const scanner = require('node-wifi-scanner');
 
 /* GET scan results. */
 router.get('/', function(req, res, next) {
-  // TODO (stub)
-  res.json({
-    success : true,
-    message : [
-      "Hello world!",
-      "More results.",
-      "Even more, you bet."
-    ]
+  // Scan for results
+  scanner.scan((err, networks) => {
+    if (err) {
+      res.json({
+        success : false,
+        message : []
+      });
+    } else {
+      res.json({
+        success : true,
+        message : networks.map(network => network.ssid)
+      });
+    }
   });
 });
 

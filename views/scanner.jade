@@ -12,8 +12,18 @@ append content
   div.container
     div.row
       div.col-xs-2.col-xs-offset-5
+        /// TODO: This is deprecated
         center
           button.btn.btn-primary(id="refresh") Refresh
+
+  block loading
+    // Loading Overlay
+    div.container
+      div.card-overlay(id="loader")
+        div.cssload-loader
+          div.cssload-inner.cssload-one
+          div.cssload-inner.cssload-two
+          div.cssload-inner.cssload-three
 
 append userScripts
   script(src="/js/scanner/app.js")

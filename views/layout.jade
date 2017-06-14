@@ -7,7 +7,10 @@ html
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans+Condensed:300|Acme|Averia+Serif+Libre|IM+Fell+English+SC")
   body
     block content
-    block userScripts
+    block externalScripts
       script(src="/js/external/jquery.min.js")
+    block components
+      script(src="/js/components/loader/loader.js")
       script(src="/js/components/list/list.js")
       script(src="/js/components/api/api.js")
+    block userScripts
