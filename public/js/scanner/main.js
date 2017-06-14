@@ -1,6 +1,6 @@
 $(() => {
   // Instantiate application
-  app = new App({
+  window.app = new App({
     listID : "results"
   });
 

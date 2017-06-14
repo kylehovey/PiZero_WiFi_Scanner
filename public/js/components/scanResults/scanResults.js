@@ -10,6 +10,9 @@ class ScanResults extends List {
 
     // Store the styles
     this.styles = options.styles;
+
+    // Create an API object
+    this.api = new API();
   }
 
   /**
@@ -36,13 +39,16 @@ class ScanResults extends List {
   /**
    * Render scan results
    */
-  async renderResults() {
+  renderResults() {
     // Get the scan results
-    var networks = (await API.basicGet("/api")).results;
+    this.api.basicGet("/api").then((response) => {
+      // Unpack the networks
+      var networks = response.results;
 
-    // Render the results
-    networks.forEach(network => {
-      this.addItem(`${this.netToString(network)}`);
+      // Render the results
+      networks.forEach(network => {
+        this.addItem(`${this.netToString(network)}`);
+      });
     });
   }
 };
